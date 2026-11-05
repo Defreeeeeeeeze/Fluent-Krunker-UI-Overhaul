@@ -1,0 +1,493 @@
+:root {
+  --accent-color: #ffffff;
+  --white: #ffffff;
+}
+
+/* Buttons */
+.actionCard,
+.actionCard.featured {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  border: 3px solid var(--accent-color) !important;
+  border-radius: 40px !important;
+  color: var(--accent-color) !important;
+  box-shadow: none !important;
+  transition: all 0.2s ease;
+}
+
+.actionCard:hover,
+.actionCard.featured:hover {
+  background-color: var(--accent-color) !important;
+  color: #000 !important;
+  box-shadow: 0 0 10px var(--accent-color) !important;
+}
+
+
+.actionCard *,
+.actionCard .material-icons-outlined,
+.actionCard svg {
+  color: inherit !important;
+  fill: currentColor !important;
+}
+
+.actionCard {
+  overflow: visible !important;
+}
+
+
+
+.actionCard,
+.actionCard.featured {
+  color: #f2f2f2 !important;   /* text goes white */
+}
+
+.actionCard .material-icons-outlined,
+.actionCard svg {
+  color: var(--accent-color) !important;
+  fill: var(--accent-color) !important;
+}
+
+.actionCard:hover,
+.actionCard:hover *,
+.actionCard:hover svg {
+  color: #000 !important;
+  fill: #000 !important;
+}
+
+#playerHeaderEl {
+  box-shadow: inset 0 -3px 0 var(--accent-color) !important;
+}
+
+#customizeButton {
+  border: 3px solid var(--accent-color) !important;
+  border-radius: 40px !important;
+  box-sizing: border-box !important;
+  transition: all 0.2s ease;
+}
+
+#customizeButton * {
+  color: inherit !important;
+  fill: currentColor !important;
+}
+
+#menuClassContainerInner {
+  border: 3px solid var(--accent-color) !important;
+  border-radius: 40px !important;
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+  padding: 14px 18px !important;
+}
+
+#leaderboardHolder,
+#leaderContainer {
+  display: none !important;
+}
+
+.centerLeaderContainerInner {
+  background-color: rgba(0, 0, 0, 0.6) !important;
+  border: 3px solid var(--accent-color) !important;
+  border-radius: 00px !important;
+  box-sizing: border-box !important;
+}
+
+.leaderTitle {
+  display: none !important;
+}
+
+:is([id*="stream" i], [class*="stream" i]):not(:is([id*="stream" i], [class*="stream" i]) *) {
+  position: fixed !important;
+  right: 330px !important;
+  bottom: auto !important;
+  left: auto !important;
+  top: 80px !important;
+  transform: none !important;
+  margin: 0 !important;
+  width: auto !important;
+  z-index: 9999 !important;
+}
+
+:is([id*="stream" i], [class*="stream" i]):not(:is([id*="stream" i], [class*="stream" i]) *) {
+  background: rgb(0 0 0 / 43%) !important;
+  border-radius: 10px !important;
+}
+
+/* Settings */
+
+#menuWindow.dark {
+  background-color: #2b2b2be7 !important;
+  box-shadow: none;
+  border-radius: 20px !important;
+  border: 5px solid #ffffff57;
+}
+
+.inputGrey,
+.inputGrey2,
+.formInput,
+.sliderVal {
+  background: rgb(255 255 255 / 15%);
+  color: #fff;
+  border-radius: 16px;
+}
+
+.sliderM {
+  background-color: rgba(255, 255, 255, 0.15);
+  height: 8px;
+  top: -4px;
+}
+
+.sliderM::-webkit-slider-thumb {
+  background-color: transparent;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 4px var(--accent-color);
+}
+
+.settingTab:hover,
+.tabANew:hover,
+.menuTabNew:hover {
+  border-color: var(--accent-color);
+  box-shadow: 9 9 9px var(--accent-color);
+}
+
+[class*="popRail"] {
+  display: none !important;
+}
+
+.setHed {
+  color: var(--accent-color);
+  background-color: rgba(59, 59, 59, 0.541);
+  border: none;
+}
+
+.slider {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+}
+
+input:checked + .slider {
+  background-color: var(--accent-color);
+}
+
+.slider:before {
+  background-color: transparent;
+  content: "ー";
+  font-weight: bolder;
+  text-align: center;
+  font-size: 16px;
+  transition: 0.25s;
+  border-radius: 16px;
+}
+
+input:checked + .slider:before {
+  transform: translateX(36px) rotate(360deg);
+  color: transparent;
+  box-shadow: inset 0 0 0 4px #fff;
+}
+
+/* Toggle Switch */
+.switch {
+  width: 70px;
+  height: 30px;
+  position: relative;
+  display: inline-block;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.15);
+  transition: 0.4s;
+  border-radius: 30px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #fff;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: var(--accent-color);
+}
+
+input:checked + .slider:before {
+  transform: translateX(40px);
+  background-color: #000;
+  box-shadow: inset 0 0 0 4px #fff;
+}
+
+.settingsBtn,
+.loadoutBtn,
+.subPassChg,
+.lnkTw,
+.hostToggle,
+.hostPresetBtn {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  border-radius: 16px;
+  padding: 6px 12px;
+  font-size: 14px;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+.settingsBtn:hover,
+.loadoutBtn:hover,
+.subPassChg:hover,
+.lnkTw:hover,
+.hostToggle:hover,
+.hostPresetBtn:hover {
+  background-color: var(--accent-color);
+  color: #000;
+  box-shadow: 0 0 8px var(--accent-color);
+}
+
+#settSearch {
+  background-color: transparent !important;
+  border: none;
+  border-bottom: 4px solid var(--accent-color);
+  color: #fff;
+  font-family: gamefont, sans-serif;
+  font-size: 16px;
+  padding: 6px 12px;
+  text-align: center;
+  outline: none;
+  width: 100%;
+}
+
+#settSearch::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: gamefont, sans-serif;
+}
+
+#settSearch:focus {
+  border-bottom: 4px solid #fff;
+}
+
+
+/* Right Menu */
+#menuItemContainer {
+    position: absolute;
+    left: 0px !important;
+    # top: 600px !important;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgb(0 0 0 / 0%);
+    background: rgb(0 0 0 / 57%);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 0px;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+    padding-right: 20px !important;
+    border: 3px solid var(--accent-color) !important;
+    border-left: none !important;
+    border-radius: 0 30px 30px 0 !important;  
+    box-sizing: border-box !important;
+}
+.buttonP:hover,
+.buttonR:hover,
+.buttonPI:hover,
+.buttonG:hover,
+#policeButton:hover {
+  cursor: pointer;
+  box-shadow: 0 0 10px var(--accent-color);
+  border-color: var(--accent-color) !important;
+}
+
+.buttonP,
+.buttonR,
+.buttonPI,
+.buttonG {
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    color: #ffffff;
+    border: 4px solid black !important;
+}
+
+#policeButton {
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border: 4px solid black !important;
+    color: #ffffff;
+}
+
+.material-icons-outlined {
+    color: #ffffff !important;
+}
+
+.menuItemTitle {
+    color: #ffffff !important;
+}
+
+/* HeaderBar */
+.headerBar {
+  background-color: rgb(0 0 0 / 50%);
+  border-radius: 0px;  
+  height: 60px !important;      
+  padding: 10px 20px !important;
+  transform: scale(1.05);
+  transform-origin: left center;
+  margin: 0px;
+}
+#headerBar i,
+#headerBar svg {
+  color: #ffffff !important;
+  fill: #ffffff !important;
+}
+.headerBarRight {
+  height: 130px !important;
+  min-width: 270px;
+  display: flex;
+  justify-content: center;
+}
+.headerBarLeft {
+  height: 50px;
+  padding: 0px 20px 10px 20px !important;
+}
+#mLevelContV {
+  line-height: 60px !important;
+}
+#menuServerInfoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  top: 70px !important;
+  position: absolute;
+  font-size: 30px;
+}
+#menuKRCount span{color:#ffffff !important}
+#mailIcon {
+  font-size: 32px !important;
+}
+#mLevelCont {
+  position: relative;
+  left: 0px !important;
+  font-size: 16px;
+  line-height: unset;
+  height: unset;
+  padding: 0 4px;
+  margin-left: 8px;
+  border-radius: 4px;
+}
+.progressBar {
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 0;
+}
+.progressBarInner {
+  background-image: linear-gradient(to right,#ffffff,#88ffbe,94%,white);
+}
+
+
+/* Logo */
+#mainLogo,
+#mainLogoFace,
+#seasonLabel {
+  display: none !important;
+}
+
+#uiBase.onMenu::before {
+  content: "";
+  position: fixed;
+  top: 20px;                 
+  left: 50%;
+  transform: translateX(-50%);
+  width: 640px;              
+  height: 124px;
+  background: url("https://i.namu.wiki/i/L6fDNtBKsIg5lvks-kNDGL-D9itbbBgBaKBXlWahU2Wiqb7yt0dDMmdy_rpNQCGj-Kw-ISdf2FFdapIfxKDuFw.webp") center / contain no-repeat;
+  image-rendering: pixelated; 
+  pointer-events: none;     
+  z-index: 200;
+}
+
+
+/* In Game */
+
+#chatHolder,
+#bottomLeftPlayer {
+  background: rgb(0 0 0 / 36%) !important;
+  backdrop-filter: blur(10px) saturate(140%) !important;
+  -webkit-backdrop-filter: blur(10px) saturate(140%) !important;
+  border: 2px solid var(--accent-color) !important;
+  border-radius: 12px !important;
+  overflow: hidden !important;
+}
+
+#chatList,
+#chatInputHolder,
+#bottomLeftPlayerLeft,
+#bottomLeftPlayerRight {
+  background: #00000000 !important;
+}
+
+#chatInput,
+#chatHolder > *,
+#chatHolder > * > * {
+  background: transparent !important;
+}
+
+#bottomLeftPlayer > *,
+#bottomLeftPlayer > * > * {
+  background: transparent !important;
+}
+
+#bottomLeftTeamType,
+#bottomLeftTeamName {
+  background: transparent !important;
+}
+
+.weapItem,
+#ammoHolder {
+  background: rgb(0 0 0 / 36%) !important;
+  backdrop-filter: blur(10px) saturate(140%) !important;
+  -webkit-backdrop-filter: blur(10px) saturate(140%) !important;
+  border: 2px solid var(--accent-color) !important;
+  border-radius: 12px !important;
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+}
+
+.weapItemInner,
+.weapItem > *,
+#ammoHolder > * {
+  background: transparent !important;
+}
+
+#timerHolder,
+#timerHolder.topLeftOld {
+  background: rgb(0 0 0 / 36%) !important;
+  backdrop-filter: blur(10px) saturate(140%) !important;
+  -webkit-backdrop-filter: blur(10px) saturate(140%) !important;
+  border: 2px solid var(--accent-color) !important;
+  border-radius: 12px !important;
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+}
+
+#timerHolder > *,
+#timerInner,
+#timerInner.topLeftOld {
+  background: transparent !important;
+}
+

@@ -1,0 +1,18 @@
+{
+  "name": "Fluent Krunker UI",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "Open Source clean UI overhaul for Krunker.io",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://krunker.io/*", "https://*.krunker.io/*"],
+      "css": ["css/main_custom.css"],
+      "run_at": "document_start"
+    }
+  ]
+}
